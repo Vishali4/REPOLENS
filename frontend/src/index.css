@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #07070A;
+    color: #F5F3FF;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom sleek dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07070A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27232F;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8B5CF6;
+}
+
+/* Glassmorphism and glow utilities */
+.glass-panel {
+  background: rgba(17, 16, 24, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid #27232F;
+}
+
+.glass-panel-hover:hover {
+  border-color: rgba(168, 85, 247, 0.4);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.15);
+}
+
+.purple-gradient-text {
+  background: linear-gradient(135deg, #F5F3FF 30%, #C084FC 70%, #A855F7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.purple-gradient-bg {
+  background: linear-gradient(135deg, #8B5CF6 0%, #A855F7 50%, #7C3AED 100%);
+}
+
+.purple-glow-btn {
+  background: linear-gradient(135deg, #8B5CF6 0%, #A855F7 100%);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.35);
+  transition: all 0.25s ease-in-out;
+}
+
+.purple-glow-btn:hover {
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.55);
+  transform: translateY(-1px);
+}
+
+/* Code block font */
+.font-mono-code {
+  font-family: 'JetBrains Mono', monospace;
+}
